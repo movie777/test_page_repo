@@ -71,7 +71,7 @@ gulp.task('pug', function(done) {
 			return stream
 				.pipe(pug({
 					basedir: 'app',
-					// pretty: '\t',
+					pretty: '\t',
 					locals: {
 						filename: file.basename.split('.')[0]
 					}

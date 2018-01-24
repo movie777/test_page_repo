@@ -1,1 +1,40 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet"><link href="libs/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"><title>Главная</title><link rel="stylesheet" href="css/index.css"></head><body><div class="wrapper"><div class="index-block"><div class="header"><div class="container"><h1><i class="fa fa-umbrella" aria-hidden="true"> </i>Архив метеослужбы</h1></div></div><div class="content"><div class="container"><div class="left-bar"><a class="button-precipitation btn-type" btn-data-type="precipitation">Осадки</a><a class="button-temperature btn-type" btn-data-type="temperature">Температура</a></div><div class="right-bar"><select class="select_weather" option-list="true"></select><select class="select_weather" option-list="false"></select><a class="button_load-data">Показать</a><div class="canvas-box"><p class="canvas-title"></p><canvas id="canvas" width="850px" height="550px"></canvas></div><ul><li class="schedule-type-list"><a class="schedule-type active" schedule-type="true">График</a><a class="schedule-type" schedule-type="false">Диаграмма</a></li></ul><img class="preloader" src="images/1.gif"></div></div></div></div></div><script type="text/javascript" src="js/index.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+		<link href="libs/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+		<title>Главная
+		</title>
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="index-block">
+				<div class="header">
+					<div class="container">
+						<h1><i class="fa fa-umbrella" aria-hidden="true"> </i>Архив метеослужбы</h1>
+					</div>
+				</div>
+				<div class="content">
+					<div class="container">
+						<div class="left-bar"><a class="button-precipitation btn-type" btn-data-type="precipitation">Осадки</a><a class="button-temperature btn-type" btn-data-type="temperature">Температура</a></div>
+						<div class="right-bar">
+							<select class="select_weather" option-list="true"></select>
+							<select class="select_weather" option-list="false"></select><a class="button_load-data">Показать</a>
+							<div class="canvas-box">
+								<p class="canvas-title"></p>
+								<canvas id="canvas" width="850px" height="550px"></canvas>
+							</div>
+							<ul>
+								<li class="schedule-type-list"><a class="schedule-type active" schedule-type="true">График</a><a class="schedule-type" schedule-type="false">Диаграмма</a></li>
+							</ul><img class="preloader" src="images/1.gif">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

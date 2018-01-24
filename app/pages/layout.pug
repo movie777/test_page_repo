@@ -1,0 +1,28 @@
+//- include /common/bemto/bemto
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet")
+		link(href="libs/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet")
+
+		block local-styles
+
+		title
+			block title
+
+		link(rel="stylesheet", href="css/" + filename + ".css")
+
+	body
+		//- include /components/menu/menu
+		div.wrapper
+			block content
+
+		//- script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		//- script(type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+		script(type='text/javascript', src='js/' + filename + '.js')
+
+
+		block local-scripts

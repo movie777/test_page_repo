@@ -1,0 +1,154 @@
+.index-block
+	//background-color #fff
+	font-size 0
+	.header
+		background-color #4285f4
+		padding-bottom 10px
+		box-shadow 0px 0px 10px 0px rgba(0,0,0,0.5)
+		position relative
+		z-index 7
+		h1 
+			font-size 24px
+			color #fff
+			font-weight bolder
+			letter-spacing 2px
+			padding-top 30px
+			text-transform uppercase
+			text-shadow 0px 0px 5px rgba(0,0,0,0.5)
+			i 
+				padding-right 10px
+	.content
+		min-height 800px
+		background-color #f1f6f7
+		padding-top 15px	
+		.left-bar
+			width 20%
+			padding-bottom 10px
+			display inline-block
+			vertical-align top			
+			a 
+				font-size 18px
+				display block
+				margin-bottom 15px
+				padding-left 15px
+				cursor pointer
+				color #4285f4
+				transition all 0.3s
+				line-height 18px
+				&:hover
+					color #f37070
+			.active
+				position relative				
+				&:after
+					content ''
+					position absolute
+					top 50%
+					transform translateY(-50%)
+					left 0
+					width 5px
+					height 5px
+					border-radius 50%
+					background-color  #4285f4
+					//box-shadow 0px 1px 4px 0px rgba(0,0,0,0.5)
+		.right-bar 
+			width 80%
+			font-size 40px
+			vertical-align top
+			display inline-block
+			position relative
+			a
+				background-color #c7c7c7
+				border-radius 5px
+				color #fff
+				font-size 18px
+				padding 5px 12px
+				cursor pointer
+				text-transform uppercase
+				font-weight 900
+				box-shadow 0px 3px 10px 0px rgba(0,0,0,0.1)
+				display inline-block
+				vertical-align top
+			select
+				background-color #74d8cf
+				border-radius 5px
+				color #fff
+				font-size 18px
+				padding 4px 12px
+				cursor pointer
+				text-transform uppercase
+				box-shadow 0px 3px 10px 0px rgba(0,0,0,0.1)
+				margin-right 15px
+				display inline-block
+				vertical-align top
+				border none
+				option
+					background-color #fff
+					color #c7c7c7
+			.canvas-box
+				background-color #fff
+				border-radius 5px
+				padding 15px
+				box-shadow 0px 3px 10px 0px rgba(0,0,0,0.1)
+				//opacity 0
+				.on-error
+					color #f37070
+				p 
+					font-size 18px
+					color #c7c7c7
+					padding-bottom 15px
+				// #canvas
+				// 	display block
+				// 	width 100%
+			.schedule-type-list
+				a 
+					font-size 18px 
+					text-transform capitalize
+					background-color transparent
+					box-shadow none
+					color #4285f4
+					padding-left 0
+					padding-right 20px
+					&:hover
+						color #f37070
+				.active
+					position relative
+					&:after
+						content ''
+						position absolute
+						bottom -3px
+						width 80%
+						height 3px
+						display block
+						background-color #74d8cf
+			.preloader
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%,50%)
+				width 40px
+				height 40px
+				transition all 0.3s
+				opacity 0
+			// .view
+			// 	opacity 1
+			// 	transition all 0.3s
+			// .non-view
+			// 	opacity 0 
+			// 	transition all 0.3s
+			
+					
+	.footer
+		background-color #4285f4
+		width 100%
+		position fixed
+		bottom 0		
+		p 
+			color #fff
+			font-size 18px
+			text-align center
+			font-weight 900
+			padding 7px 0px
+			font-family 'Oswald', sans-serif
+			letter-spacing 1px
+			text-shadow 0px 0px 5px rgba(0,0,0,0.5)
+			

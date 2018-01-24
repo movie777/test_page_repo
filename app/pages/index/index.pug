@@ -1,0 +1,46 @@
+extends /pages/layout
+
+block title
+	| Главная
+
+block content
+	div.index-block
+		div.header
+			div.container
+				h1
+					i.fa.fa-umbrella(aria-hidden="true") 
+					|Архив метеослужбы
+		div.content
+			div.container
+				div.left-bar
+					a.button-precipitation.btn-type(btn-data-type="precipitation") Осадки
+					a.button-temperature.btn-type(btn-data-type="temperature") Температура
+					
+				div.right-bar
+					select(option-list='true').select_weather
+					//-button#button
+						//- option(value='1') 1
+						//- option(value='2') 2
+					select(option-list='false').select_weather
+					//- 	option(value='3') 3
+					//- 	option(value='4') 4
+					a.button_load-data Показать
+						//- .fa.fa-snowflake-o(aria-hidden="true") 
+
+					div.canvas-box
+						p.canvas-title
+						canvas#canvas(width="850px" height="550px")
+						//-canvas#canvas
+					ul
+						li.schedule-type-list
+							a.schedule-type.active(schedule-type="true") График
+							a.schedule-type(schedule-type="false") Диаграмма
+					img(src='images/1.gif').preloader
+					
+
+		//- div.footer
+		//- 	div.container
+		//- 		p 2018
+				
+
+
